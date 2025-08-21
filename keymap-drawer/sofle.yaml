@@ -26,7 +26,7 @@ layers:
   - ''''
   - BSPC
   - TAB
-  - {t: A, h: LEFT SHIFT}
+  - {t: A, h: LEFT GUI}
   - {t: R, h: LEFT ALT}
   - {t: S, h: LCTRL}
   - {t: T, h: LEFT SHIFT}
