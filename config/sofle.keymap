@@ -22,7 +22,54 @@
 #define RAISE 2
 #define ADJUST 3
 
+&sk {
+    release-after-ms = <1000>;
+    quick-release;
+    lazy;
+    ignore-modifiers;
+};
+
+&mmv {
+    acceleration-exponent = <1>;          // 1
+    time-to-max-speed-ms = <500>;         // 300
+    delay-ms = <0>;                       // 0
+};
+
+&lt {
+    tapping-term-ms = <200>; // default 200
+    flavor = "balanced"; // or hold-preferred or tap-preferred
+    quick-tap-ms = <150>;
+};
+
 / {
+
+  behaviors {
+        bhm: balanced_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+
+        arrow_func_tap: arrow_func_tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ARROW_FUNC_TAP";
+            #binding-cells = <0>;
+            bindings = <&kp GREATER_THAN>, <&arrow_func>;
+        };
+
+        underspace: underspace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UNDERSPACE";
+            bindings = <&lt 1 SPACE>, <&kp UNDER>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
+    };
+
     // Activate ADJUST layer by pressing raise and lower
 
     conditional_layers {
