@@ -40,9 +40,9 @@
 };
 
 &lt {
-    tapping-term-ms = <200>; // default 200
-    flavor = "balanced"; // or hold-preferred or tap-preferred
-    quick-tap-ms = <150>;
+    tapping-term-ms = <220>; // default 200
+    flavor = "tap-preferred"; // or hold-preferred or tap-preferred
+    quick-tap-ms = <180>;
 };
 
 / {
@@ -50,8 +50,8 @@
         bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;    // <---[[moderate duration]]
-            quick-tap-ms = <0>;
+            tapping-term-ms = <220>;    // <---[[moderate duration]]
+            quick-tap-ms = <180>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
