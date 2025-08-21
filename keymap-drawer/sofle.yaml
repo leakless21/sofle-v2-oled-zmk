@@ -16,37 +16,37 @@ layers:
   - ESC
   - Q
   - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
+  - F
   - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
   - BSPC
   - TAB
   - A
+  - R
   - S
-  - D
-  - F
+  - T
   - G
-  - H
-  - J
-  - K
-  - L
-  - ;
+  - M
+  - N
+  - E
+  - I
+  - O
   - ''''
   - LSHFT
   - Z
   - X
   - C
+  - D
   - V
-  - B
   - MUTE
   - '&caps_word'
-  - N
-  - M
+  - K
+  - H
   - ','
   - .
   - /
