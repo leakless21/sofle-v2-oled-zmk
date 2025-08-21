@@ -33,7 +33,7 @@ layers:
   - G
   - M
   - {t: N, h: RIGHT SHIFT}
-  - {t: RCTRL, h: E}
+  - {t: E, h: RCTRL}
   - {t: I, h: RIGHT ALT}
   - {t: O, h: RIGHT GUI}
   - ;
