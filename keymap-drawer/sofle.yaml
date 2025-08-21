@@ -26,16 +26,16 @@ layers:
   - ''''
   - BSPC
   - TAB
-  - A
-  - R
-  - S
-  - T
+  - {t: A, h: LEFT SHIFT}
+  - {t: R, h: LEFT ALT}
+  - {t: S, h: LCTRL}
+  - {t: T, h: LEFT SHIFT}
   - G
   - M
-  - N
-  - E
-  - I
-  - O
+  - {t: N, h: RIGHT SHIFT}
+  - {t: RCTRL, h: E}
+  - {t: I, h: RIGHT ALT}
+  - {t: O, h: RIGHT GUI}
   - ;
   - LSHFT
   - {t: Z, h: BUTTON}
