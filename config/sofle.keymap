@@ -174,11 +174,11 @@
             label = "SYM";
             display-name = "SYM";
             bindings = <
-&trans  &trans     &trans           &trans        &trans                &trans                                              &trans                &trans           &trans            &trans             &trans    &trans
-&trans  &kp GRAVE  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                               &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans
-&trans  &kp COLON  &kp DOLLAR       &kp PERCENT   &kp LCTRL             &kp EQUAL                                           &kp SLASH             &kp RIGHT_SHIFT  &kp RCTRL         &kp RIGHT_ALT      &kp RGUI  &trans
-&trans  &kp TILDE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp PIPE               &trans               &trans  &kp NON_US_BACKSLASH  &trans           &trans            &trans             &trans    &trans
-                   &trans           &trans        &kp LESS_THAN         &kp GREATER_THAN       &kp DOUBLE_QUOTES    &trans  &trans                &trans           &trans            &trans
+&trans  &trans     &trans           &trans        &trans                &trans                                      &trans                &trans           &trans            &trans             &trans    &trans
+&trans  &kp GRAVE  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                       &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans
+&trans  &kp COLON  &kp DOLLAR       &kp PERCENT   &kp LCTRL             &kp EQUAL                                   &kp SLASH             &kp RIGHT_SHIFT  &kp RCTRL         &kp RIGHT_ALT      &kp RGUI  &trans
+&trans  &kp TILDE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp PIPE               &trans       &trans  &kp NON_US_BACKSLASH  &trans           &trans            &trans             &trans    &trans
+                   &trans           &trans        &kp LESS_THAN         &kp GREATER_THAN       &kp MINUS    &trans  &trans                &trans           &trans            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT>;
