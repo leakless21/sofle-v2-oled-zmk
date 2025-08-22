@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default:
+  BASE:
   - '`'
   - '1'
   - '2'
@@ -38,30 +38,30 @@ layers:
   - {t: O, h: RIGHT GUI}
   - ;
   - LSHFT
-  - {t: Z, h: '3'}
+  - {t: Z, h: BUTTON}
   - X
   - C
   - D
-  - {t: V, h: '4'}
+  - {t: V, h: MEDIA}
   - '&mkp MB1'
   - MUTE
-  - {t: K, h: Fun}
+  - {t: K, h: FUNC}
   - H
   - ','
   - .
-  - {t: /, h: '3'}
+  - {t: /, h: BUTTON}
   - RSHFT
   - LGUI
   - LALT
   - LCTRL
-  - {t: CAPSLOCK, h: NAVIGATION}
-  - {t: SPACE, h: '2'}
-  - {t: ENTER, h: Sym}
-  - {t: BACKSPACE, h: Num}
+  - {t: CAPSLOCK, h: NAV}
+  - {t: SPACE, h: MOUSE}
+  - {t: ENTER, h: SYM}
+  - {t: BACKSPACE, h: NUM}
   - RCTRL
   - RALT
   - RGUI
-  NAVIGATION:
+  NAV:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -91,7 +91,7 @@ layers:
   - LEFT ALT
   - LCTRL
   - LEFT SHIFT
-  - {t: qwerty, h: toggle}
+  - {t: GAME, h: toggle}
   - CAPS
   - LEFT ARROW
   - DOWN
@@ -122,7 +122,7 @@ layers:
   - DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '2':
+  MOUSE:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -183,7 +183,7 @@ layers:
   - '&mkp MCLK'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '3':
+  BUTTON:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -244,7 +244,7 @@ layers:
   - '&mkp MB3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '4':
+  MEDIA:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -305,7 +305,7 @@ layers:
   - MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Num:
+  NUM:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -366,7 +366,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Sym:
+  SYM:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -427,7 +427,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Fun:
+  FUNC:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -488,7 +488,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  qwerty:
+  GAME:
   - ESCAPE
   - '`'
   - '1'
@@ -544,7 +544,7 @@ layers:
   - {t: ▽, type: trans}
   - G
   - SPACE
-  - {t: default, h: toggle}
+  - {t: BASE, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
