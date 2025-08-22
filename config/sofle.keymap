@@ -77,7 +77,8 @@
         compatible = "zmk,keymap";
 
         Base {
-            label = "default";
+            label = "BASE";
+            display-name = "BASE";
 
             // ------------------------------------------------------------------------------------------------------------
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
@@ -100,6 +101,8 @@
         };
 
         NAVIGATION {
+            label = "NAV";
+            display-name = "NAV";
             bindings = <
 &trans       &trans        &trans        &trans     &trans          &trans                       &trans         &trans          &trans         &trans        &trans      &trans
 &trans       &trans        &trans        &trans     &trans          &trans                       &kp K_REDO     &kp K_PASTE     &kp K_COPY     &kp K_CUT     &kp K_UNDO  &trans
@@ -110,6 +113,8 @@
         };
 
         MOUSE {
+            label = "MOUSE";
+            display-name = "MOUSE";
             bindings = <
 &trans  &trans        &trans        &trans     &trans          &trans                      &trans      &trans          &trans      &trans        &trans      &trans
 &trans  &trans        &trans        &trans     &trans          &trans                      &kp K_REDO  &kp K_PASTE     &kp K_COPY  &kp K_CUT     &kp K_UNDO  &trans
@@ -124,6 +129,8 @@
         };
 
         BUTTON {
+            label = "BUTTON";
+            display-name = "BUTTON";
             bindings = <
 &trans  &trans        &trans        &trans      &trans          &trans                            &trans      &trans           &trans      &trans         &trans      &trans
 &trans  &kp K_UNDO    &kp K_CUT     &kp K_COPY  &kp K_PASTE     &kp K_REDO                        &kp K_REDO  &kp K_PASTE      &kp K_COPY  &kp K_CUT      &kp K_UNDO  &trans
@@ -134,6 +141,8 @@
         };
 
         MEDIA {
+            label = "MEDIA";
+            display-name = "MEDIA";
             bindings = <
 &trans  &trans        &trans        &trans     &trans          &trans                                   &trans            &trans           &trans             &trans           &trans           &trans
 &trans  &trans        &trans        &trans     &trans          &trans                                   &rgb_ug RGB_TOG   &rgb_ug RGB_EFF  &rgb_ug RGB_HUI    &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &trans
@@ -148,6 +157,8 @@
         };
 
         Num {
+            label = "NUM";
+            display-name = "NUM";
             bindings = <
 &trans  &trans            &trans        &trans        &trans        &trans                                  &trans  &trans           &trans     &trans         &trans    &trans
 &trans  &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET                       &trans  &trans           &trans     &trans         &trans    &trans
@@ -160,6 +171,8 @@
         };
 
         Sym {
+            label = "SYM";
+            display-name = "SYM";
             bindings = <
 &trans  &trans     &trans           &trans        &trans                &trans                                              &trans                &trans           &trans            &trans             &trans    &trans
 &trans  &kp GRAVE  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                               &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans
@@ -172,6 +185,8 @@
         };
 
         Fun {
+            label = "FUNC";
+            display-name = "FUNC";
             bindings = <
 &trans  &trans   &trans  &trans  &trans              &trans                              &trans                &trans           &trans            &trans             &trans    &trans
 &trans  &kp F12  &kp F7  &kp F8  &kp F9              &kp PRINTSCREEN                     &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans
@@ -182,6 +197,8 @@
         };
 
         qwerty {
+            label = "GAME";
+            display-name = "GAME";
             bindings = <
 &kp ESCAPE      &kp GRAVE     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                       &trans  &trans  &trans  &trans  &trans  &trans
 &kp TAB         &kp N5        &kp Q         &kp W         &kp E         &kp R                              &trans  &trans  &trans  &trans  &trans  &trans
