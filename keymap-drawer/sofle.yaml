@@ -24,7 +24,7 @@ layers:
   - U
   - Y
   - ''''
-  - BSPC
+  - BACKSPACE
   - TAB
   - {t: A, h: LEFT GUI}
   - {t: R, h: LEFT ALT}
@@ -43,7 +43,7 @@ layers:
   - C
   - D
   - {t: V, h: MEDIA}
-  - '&mkp MB1'
+  - '&caps_word'
   - MUTE
   - {t: K, h: FUNC}
   - H
@@ -54,8 +54,8 @@ layers:
   - LGUI
   - LALT
   - LCTRL
-  - {t: CAPSLOCK, h: NAV}
-  - {t: SPACE, h: MOUSE}
+  - {t: SPACE, h: NAV}
+  - {t: TAB, h: MOUSE}
   - {t: ENTER, h: SYM}
   - {t: BACKSPACE, h: NUM}
   - RCTRL
