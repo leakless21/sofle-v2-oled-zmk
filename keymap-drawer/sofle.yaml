@@ -421,7 +421,7 @@ layers:
   - {t: ▽, type: trans}
   - <
   - '>'
-  - '"'
+  - '-'
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
