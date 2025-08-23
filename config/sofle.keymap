@@ -88,7 +88,7 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE   &kp N1           &kp N2           &kp N3        &kp N4             &kp N5                                  &kp N6           &kp N7              &kp N8        &kp N9            &kp N0            &kp DEL
+&kp GRAVE   &kp N1           &kp N2           &kp N3        &kp N4             &kp N5                                  &kp N6           &kp N7              &kp N8        &kp N9            &kp N0            &kp DELETE
 &kp ESCAPE  &kp Q            &kp W            &kp F         &kp P              &kp B                                   &kp J            &kp L               &kp U         &kp Y             &kp APOSTROPHE    &kp BACKSPACE
 &kp TAB     &bhm LEFT_GUI A  &bhm LEFT_ALT R  &bhm LCTRL S  &bhm LEFT_SHIFT T  &kp G                                   &kp M            &bhm RIGHT_SHIFT N  &bhm RCTRL E  &bhm RIGHT_ALT I  &bhm RIGHT_GUI O  &kp SEMICOLON
 &kp LSHFT   &lt 3 Z          &kp X            &kp C         &kp D              &lt 4 V      &caps_word    &kp K_MUTE   &lt 7 K          &kp H               &kp COMMA     &kp DOT           &lt 3 SLASH       &kp RSHFT
@@ -106,7 +106,7 @@
             bindings = <
 &trans       &trans        &trans        &trans     &trans          &trans                       &trans         &trans          &trans         &trans        &trans      &trans
 &trans       &trans        &trans        &trans     &trans          &trans                       &kp K_REDO     &kp K_PASTE     &kp K_COPY     &kp K_CUT     &kp K_UNDO  &trans
-&trans       &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &to 8                        &kp CAPS       &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT   &trans
+&trans       &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &to 8                        &kp CAPS       &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT   &kp K_CONTEXT_MENU
 &bootloader  &trans        &trans        &trans     &trans          &trans  &trans    &trans     &kp INSERT     &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END     &trans
                            &trans        &trans     &trans          &trans  &trans    &kp ENTER  &kp BACKSPACE  &kp DELETE      &trans         &trans
             >;
@@ -116,11 +116,11 @@
             label = "MOUSE";
             display-name = "MOUSE";
             bindings = <
-&trans  &trans        &trans        &trans     &trans          &trans                      &trans      &trans          &trans      &trans        &trans      &trans
-&trans  &trans        &trans        &trans     &trans          &trans                      &kp K_REDO  &kp K_PASTE     &kp K_COPY  &kp K_CUT     &kp K_UNDO  &trans
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans                      &mkp MB5    &kp LEFT_ARROW  &kp DOWN    &kp UP_ARROW  &kp RIGHT   &trans
-&trans  &trans        &trans        &trans     &trans          &trans  &trans    &trans    &mkp MB4    &trans          &trans      &trans        &trans      &trans
-                      &trans        &trans     &trans          &trans  &trans    &mkp MB2  &mkp MB1    &mkp MCLK       &trans      &trans
+&trans  &trans        &trans        &trans     &trans          &trans                      &trans      &trans          &trans          &trans        &trans           &trans
+&trans  &trans        &trans        &trans     &trans          &trans                      &kp K_REDO  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO       &trans
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans                      &mkp MB5    &kp LEFT_ARROW  &kp DOWN        &kp UP_ARROW  &kp RIGHT        &kp K_CONTEXT_MENU
+&trans  &trans        &trans        &trans     &trans          &trans  &trans    &trans    &mkp MB4    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+                      &trans        &trans     &trans          &trans  &trans    &mkp MB2  &mkp MB1    &mkp MCLK       &trans          &trans
             >;
 
             sensor-bindings =
@@ -200,11 +200,11 @@
             label = "GAME";
             display-name = "GAME";
             bindings = <
-&kp ESCAPE      &kp GRAVE     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                       &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB         &kp N5        &kp Q         &kp W         &kp E         &kp R                              &trans  &trans  &trans  &trans  &trans  &trans
-&kp BACKSPACE   &kp NUMBER_6  &kp A         &kp S         &kp D         &kp F                              &trans  &trans  &trans  &trans  &trans  &trans
+&kp DELETE      &kp GRAVE     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                       &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE      &kp N5        &kp Q         &kp W         &kp E         &kp R                              &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB         &kp NUMBER_6  &kp A         &kp S         &kp D         &kp F                              &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &kp LCTRL     &kp Z         &kp X         &kp C         &kp V         &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                              &trans        &kp LEFT_ALT  &trans        &kp G         &kp SPACE    &to 0   &trans  &trans  &trans  &trans
+                              &trans        &kp LEFT_ALT  &kp LEFT_ALT  &kp G         &kp SPACE    &to 0   &trans  &trans  &trans  &trans
             >;
         };
     };
